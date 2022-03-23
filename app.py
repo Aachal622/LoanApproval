@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('/content/drive/My Drive/ATCSloan.pkl', 'rb')) 
+model = pickle.load(open('ATCSloan.pkl', 'rb')) 
 # Feature Scaling
-dataset = pd.read_csv('/content/drive/My Drive/FDP/train (1).csv')
+dataset = pd.read_csv('train (1).csv')
 
 # Extracting independent variable:
 train=train.drop('Loan_ID',axis=1)
